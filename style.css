@@ -1,0 +1,150 @@
+body, html {
+ margin: 0;
+ padding: 0;
+ font-family: 'Poppins', sans-serif;
+}
+
+.container {
+ max-width: 30%;
+ margin: 20px  auto;
+ padding: 20px;
+ text-align: center;
+ background-color: #fff;
+ border-radius: 10px;
+ border: 2px solid #0056b3;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+ box-sizing: border-box;
+}
+
+h1 {
+color: #0056b3;
+ font-size: 3rem;
+ font-family:  Helvetica;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+
+.inputs {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+
+.inputs input {
+ flex: 1;
+ padding: 10px;
+ font-size: 1rem;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin-right: 10px;
+}
+
+.inputs button {
+ padding: 10px;
+ font-size: 1rem;
+ border: none;
+ border-radius: 5px;
+ background-color: #007bff;
+ color: white;
+ cursor: pointer;
+}
+
+.inputs button:hover {
+ background-color: #0056b3;
+}
+
+.text ul {
+ position: relative;
+ background-color: #007bff;
+ color: white;
+ font-size: 1rem;
+ border: none;
+ border-radius: 5px;
+ padding: 7px;
+ text-align: left;
+ margin: 10px 0;
+ list-style-type: none;
+}  
+
+.text ul span {
+flex: 1;
+margin-left: 10px;
+}
+
+.text ul i {
+position: absolute;
+margin-left: 10px;
+cursor: pointer;
+}
+
+.text ul .edit {
+right: 40px;
+}
+
+/*.bottom-right-image {
+position: fixed;
+bottom: 10px;
+right: 10;
+width: 25vw; 
+max-width: 400px; 
+height: auto;
+}*/
+
+.bottom-right-image {
+           /* position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 20%; /* Adjust the size as needed 
+           max-width: 150px; /* Prevent the image from getting too large 
+           height: auto;*/
+
+           position: fixed;
+           bottom: 10px;
+    right: 10px;
+   /* transform: translateY(-50%); /* Center the image vertically */
+    /*top: 50%; Center the image vertically */
+    width: 25vw; 
+    max-width: 400px; 
+    height: auto;
+        }
+
+
+
+@media (max-width: 768px) {
+.container {
+max-width: 95%;
+}
+
+ h1 {
+     font-size: 1.5rem;
+ }
+
+ .inputs {
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .inputs input, .inputs button {
+     width: 100%;
+     max-width: 300px;
+     margin-bottom: 10px;
+     font-size: 1rem;
+ }
+
+ .bottom-right-image {
+     width: 30vw;
+ }
+}
+
+@media (max-width: 480px) {
+.container {
+max-width: 100%;
+}
+ h1 {
+     font-size: 1.2rem;
+ }
+
+ .bottom-right-image {
+     width: 40vw;
+ }
+}
